@@ -25,8 +25,13 @@ function App() {
       <h1>Vite + React</h1>
       <h1></h1>
       <div className="card">
- 
+      <div>{randUser?.results[0].name.title} {randUser?.results[0].name.first} {randUser?.results[0].name.last}</div>
       </div>
+      <div>Age {randUser?.results[0].dob.age}</div>
+      <div>Address:</div>
+      <div>{randUser?.results[0].location.street.name} {randUser?.results[0].location.street.number}</div>
+      <div>{randUser?.results[0].location.city} {randUser?.results[0].location.state} {randUser?.results[0].location.country}</div>
+      <div>Postcode {randUser?.results[0].location.postcode}</div>
     </>
   )
 }
