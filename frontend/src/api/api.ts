@@ -21,6 +21,10 @@ export interface IInfo {
 
 }
 
+export interface IName {
+    first: string
+}
+
 export interface IRandomUser {
     results: IInfo[];
     // name: 
